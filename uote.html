@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zöldülés Kft – aszalt és szárított gyümölcsök, kamilla és helyi termékek.">
+  <title>Ajánlatkérés – Zöldülés Kft</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="sticky-header">
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="img/logo.png" alt="Zöldülés Kft logó">
+      <span>ZÖLDÜLÉS KFT</span>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link">Kezdőlap</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link">Termékeink & Szolgáltatásaink</a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link">Galéria</a></li>
+      <li class="nav-item"><a href="quote.html" class="nav-link">Ajánlatkérés</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link">Kapcsolat</a></li>
+    </ul>
+    <button class="theme-toggle" aria-label="Sötét/Világos mód">🌙</button>
+    <button class="hamburger" aria-label="Menü váltása">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </nav>
+</header>
+<main>
+
+<section class="container">
+  <h1>Ajánlatkérés</h1>
+  <p>Kérjük, töltse ki az alábbi űrlapot. Az adatokat a levelezője nyitja meg (mailto), vagy használhat harmadik fél űrlap‑szolgáltatást.</p>
+  <form class="contact-form" action="mailto:info@zoldules.hu" method="post" enctype="text/plain">
+    <label>Név<input type="text" name="name" required></label>
+    <label>E‑mail<input type="email" name="email" required></label>
+    <label>Telefon<input type="tel" name="phone"></label>
+    <label>Üzenet<textarea name="message" rows="6" required></textarea></label>
+    <button type="submit" class="btn btn-primary">Küldés</button>
+  </form>
+  <p class="hint">Tipp: ha szervert‑oldali űrlapot szeretne (reCAPTCHA, fájlfeltöltés), érdemes Netlify Forms/Formspark/WS Form használata.</p>
+</section>
+
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; <span id="current-year"></span> Zöldülés Kft. Minden jog fenntartva.</p>
+    <div class="footer-links">
+      <a href="contact.html#privacy">Adatvédelmi irányelvek</a> | 
+      <a href="contact.html#terms">Felhasználási feltételek</a>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
